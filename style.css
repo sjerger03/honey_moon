@@ -1,0 +1,148 @@
+:root {
+  --ink: #1b1b1f;
+  --muted: #6b6b76;
+  --line: #e3e1db;
+  --paper: #faf8f4;
+  --card: #ffffff;
+  --accent: #0f6e5c;
+  --accent-soft: #e4f2ee;
+  --warn: #b5560d;
+  --warn-soft: #fbeee0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #ece9e2;
+    --muted: #a3a19b;
+    --line: #33322e;
+    --paper: #171613;
+    --card: #201f1b;
+    --accent: #5ecbb0;
+    --accent-soft: #1c2d29;
+    --warn: #e0a458;
+    --warn-soft: #2c2318;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.hero {
+  padding: 4rem 1.5rem 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+}
+
+.timeline {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.day {
+  margin-bottom: 2.5rem;
+}
+
+.day-label .date {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.event {
+  display: flex;
+  gap: 1rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+}
+
+.event-icon {
+  flex: none;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  font-size: 1.1rem;
+}
+
+.event.gap .event-icon {
+  background: var(--warn-soft);
+}
+
+.event-body h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.event-body .meta {
+  margin: 0 0 0.2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.event-body .confirmation {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--accent);
+}
+
+.event.checkout {
+  opacity: 0.85;
+}
+
+.event.gap {
+  border-color: var(--warn);
+  border-style: dashed;
+}
+
+.event.gap h2 {
+  color: var(--warn);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1.5rem 3rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
