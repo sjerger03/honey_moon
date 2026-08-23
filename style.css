@@ -547,8 +547,8 @@ a:focus-visible, button:focus-visible {
   display: inline-block;
   margin-top: 0.75rem;
   padding: 0.55rem 1.1rem;
-  background: var(--gold);
-  color: #fff;
+  background: var(--gold-bright);
+  color: var(--ink);
   font-family: var(--font-body);
   font-size: 0.68rem;
   font-weight: 700;
