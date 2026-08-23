@@ -37,7 +37,6 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; background: var(--sand); }
-html, body { overscroll-behavior-y: none; }
 
 body {
   margin: 0;
@@ -79,28 +78,8 @@ a:focus-visible, button:focus-visible {
   left: 0;
   right: 0;
   z-index: 30;
-  padding-top: env(safe-area-inset-top);
   background: transparent;
   pointer-events: none;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  backface-visibility: hidden;
-}
-
-/* Safari 26+ samples background-color from fixed/sticky elements at the
-   viewport edge to tint the status bar/toolbar, even when transparent —
-   so the color-carrying layer has to be a non-fixed child, not .site-nav
-   itself, or the hero photo gets replaced by a white status-bar tint. */
-.site-nav-bg {
-  position: absolute;
-  inset: 0;
-  background: transparent;
-  transition: background 0.35s ease, box-shadow 0.35s ease;
-}
-
-.site-nav.is-scrolled .site-nav-bg {
-  background: var(--sand);
-  box-shadow: 0 1px 0 var(--line);
 }
 
 .nav-inner {
@@ -277,14 +256,11 @@ a:focus-visible, button:focus-visible {
 
 .hero {
   position: relative;
-  margin-top: calc(-1 * env(safe-area-inset-top));
-  padding-top: env(safe-area-inset-top);
-  height: calc(100vh + env(safe-area-inset-top));
+  height: 100vh;
   min-height: 560px;
   overflow: hidden;
   display: flex;
   align-items: center;
-  box-sizing: border-box;
 }
 
 .hero::after {
@@ -606,9 +582,7 @@ footer {
 
 .page-hero {
   position: relative;
-  margin-top: calc(-1 * env(safe-area-inset-top));
-  padding-top: env(safe-area-inset-top);
-  height: calc(60vh + env(safe-area-inset-top));
+  height: 60vh;
   min-height: 420px;
   background-size: cover;
   background-position: center;
@@ -616,7 +590,6 @@ footer {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  box-sizing: border-box;
 }
 
 .page-hero::after {
