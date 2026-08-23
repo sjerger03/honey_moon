@@ -103,7 +103,7 @@ a:focus-visible, button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.35s ease;
+  transition: background 0.35s ease, box-shadow 0.35s ease;
 }
 
 .nav-flower-icon {
@@ -167,7 +167,10 @@ a:focus-visible, button:focus-visible {
    circle behind the icon instead of a full bar, and the wordmark just
    disappears rather than swapping to the compact "S & J" form. */
 @media (max-width: 640px) {
-  .site-nav.is-scrolled .nav-menu-toggle { background: var(--sand); }
+  .site-nav.is-scrolled .nav-menu-toggle {
+    background: var(--sand);
+    box-shadow: 0 3px 10px rgba(20, 18, 15, 0.2), 0 1px 3px rgba(20, 18, 15, 0.14);
+  }
   .site-nav.is-scrolled .nav-wordmark { opacity: 0; pointer-events: none; }
 }
 
