@@ -97,12 +97,13 @@ a:focus-visible, button:focus-visible {
   pointer-events: auto;
   background: none;
   border: none;
-  padding: 0.5rem 0.25rem;
+  border-radius: 50%;
+  padding: 0.5rem;
   cursor: pointer;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.2rem;
+  justify-content: center;
+  transition: background 0.35s ease;
 }
 
 .nav-flower-icon {
@@ -162,8 +163,21 @@ a:focus-visible, button:focus-visible {
   transition: opacity 0.35s ease;
 }
 
-.site-nav.is-scrolled .nav-wordmark-full { opacity: 0; }
-.site-nav.is-scrolled .nav-wordmark-compact { opacity: 1; }
+/* Mobile: nav stays transparent always; scrolled state gets a white
+   circle behind the icon instead of a full bar, and the wordmark just
+   disappears rather than swapping to the compact "S & J" form. */
+@media (max-width: 640px) {
+  .site-nav.is-scrolled .nav-menu-toggle { background: var(--sand); }
+  .site-nav.is-scrolled .nav-wordmark { opacity: 0; pointer-events: none; }
+}
+
+/* Desktop/tablet: full white bar + "S & J" compact wordmark on scroll. */
+@media (min-width: 641px) {
+  .site-nav { transition: background 0.35s ease, box-shadow 0.35s ease; }
+  .site-nav.is-scrolled { background: var(--sand); box-shadow: 0 1px 0 var(--line); }
+  .site-nav.is-scrolled .nav-wordmark-full { opacity: 0; }
+  .site-nav.is-scrolled .nav-wordmark-compact { opacity: 1; }
+}
 
 .day-nav {
   display: flex;
