@@ -267,11 +267,14 @@ a:focus-visible, button:focus-visible {
 
 .hero {
   position: relative;
-  height: 100vh;
+  margin-top: calc(-1 * env(safe-area-inset-top));
+  padding-top: env(safe-area-inset-top);
+  height: calc(100vh + env(safe-area-inset-top));
   min-height: 560px;
   overflow: hidden;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .hero::after {
@@ -593,7 +596,9 @@ footer {
 
 .page-hero {
   position: relative;
-  height: 60vh;
+  margin-top: calc(-1 * env(safe-area-inset-top));
+  padding-top: env(safe-area-inset-top);
+  height: calc(60vh + env(safe-area-inset-top));
   min-height: 420px;
   background-size: cover;
   background-position: center;
@@ -601,6 +606,7 @@ footer {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .page-hero::after {
