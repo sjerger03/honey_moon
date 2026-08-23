@@ -189,7 +189,8 @@ a:focus-visible, button:focus-visible {
 
 .day-nav a {
   padding: 0.3rem 0.5rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.55);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -385,7 +386,11 @@ a:focus-visible, button:focus-visible {
 }
 
 @media (max-width: 560px) {
-  .hero-content { padding: 6.5rem 1.5rem; }
+  .hero-content { padding: 5.5rem 1.5rem 2rem; }
+  .hero-subtitle { font-size: clamp(2.1rem, 9vw, 2.8rem); }
+  .hero-title { margin-bottom: 0.6rem; font-size: clamp(2.2rem, 10vw, 3.2rem); }
+  .countdown { gap: 0.35rem; }
+  .day-nav { margin-top: 1rem; }
 }
 
 /* ---------- Timeline ---------- */
