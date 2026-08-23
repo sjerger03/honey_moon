@@ -36,7 +36,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background: var(--sand); }
 html, body { overscroll-behavior-y: none; }
 
 body {
@@ -85,10 +85,20 @@ a:focus-visible, button:focus-visible {
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
   backface-visibility: hidden;
+}
+
+/* Safari 26+ samples background-color from fixed/sticky elements at the
+   viewport edge to tint the status bar/toolbar, even when transparent —
+   so the color-carrying layer has to be a non-fixed child, not .site-nav
+   itself, or the hero photo gets replaced by a white status-bar tint. */
+.site-nav-bg {
+  position: absolute;
+  inset: 0;
+  background: transparent;
   transition: background 0.35s ease, box-shadow 0.35s ease;
 }
 
-.site-nav.is-scrolled {
+.site-nav.is-scrolled .site-nav-bg {
   background: var(--sand);
   box-shadow: 0 1px 0 var(--line);
 }
