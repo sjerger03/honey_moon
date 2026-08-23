@@ -178,9 +178,11 @@ a:focus-visible, button:focus-visible {
 
 .day-nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem 1.1rem;
   max-width: 100%;
   margin: 1.75rem 0 0;
 }
