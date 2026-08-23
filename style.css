@@ -190,7 +190,7 @@ a:focus-visible, button:focus-visible {
   align-items: center;
   gap: 1.1rem;
   max-width: 100%;
-  margin: 1.75rem 0 0;
+  margin: 3rem 0 0;
 }
 
 .day-nav a {
@@ -400,7 +400,7 @@ a:focus-visible, button:focus-visible {
   .hero-subtitle { font-size: clamp(2.1rem, 9vw, 2.8rem); }
   .hero-title { margin-bottom: 0.6rem; font-size: clamp(2.2rem, 10vw, 3.2rem); }
   .countdown { gap: 0.35rem; }
-  .day-nav { margin-top: 1rem; }
+  .day-nav { margin-top: 1.75rem; }
 }
 
 /* ---------- Timeline ---------- */
