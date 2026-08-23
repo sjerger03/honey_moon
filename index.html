@@ -10,39 +10,58 @@
 
 <a class="skip-link" href="#full-itinerary">Skip to itinerary</a>
 
-<header class="site-nav">
+<header class="site-nav" id="site-nav">
   <div class="nav-inner">
-    <nav class="day-nav" aria-label="Jump to day">
-      <a href="#day-14">Mon Sep 14</a>
-      <a href="#day-16">Wed Sep 16</a>
-      <a href="#day-18">Fri Sep 18</a>
-      <a href="#day-21">Mon Sep 21</a>
-    </nav>
+    <button class="nav-menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">
+      <svg class="nav-flower-icon" viewBox="0 0 80 80" width="28" height="28" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M14.15 50.69C10.48 58.26 11.25 67.01 11.29 67.4C11.35 68.08 11.9 68.63 12.58 68.69C12.7 68.7 13.61 68.78 15.04 68.78C18.25 68.78 24.05 68.35 29.29 65.81C32.03 73.73 38.73 79.36 39.08 79.66C39.34 79.88 39.67 79.99 39.99 79.99C40.31 79.99 40.64 79.88 40.9 79.66C41.25 79.37 47.95 73.73 50.69 65.81C55.93 68.35 61.73 68.78 64.94 68.78C66.36 68.78 67.28 68.7 67.4 68.69C68.09 68.63 68.63 68.08 68.69 67.4C68.73 67.01 69.5 58.26 65.83 50.69C73.73 47.94 79.36 41.26 79.66 40.91C80.1 40.38 80.1 39.61 79.66 39.08C79.37 38.72 73.74 32.04 65.83 29.3C69.49 21.73 68.73 12.98 68.69 12.59C68.63 11.91 68.08 11.36 67.4 11.3C67.01 11.27 58.26 10.5 50.69 14.16C47.94 6.25 41.26 0.63 40.91 0.33C40.38 -0.11 39.61 -0.11 39.08 0.33C38.73 0.62 32.04 6.25 29.3 14.16C21.73 10.5 12.98 11.26 12.59 11.3C11.9 11.36 11.36 11.91 11.3 12.59C11.26 12.98 10.49 21.73 14.16 29.3C6.26 32.05 0.63 38.73 0.33 39.08C-0.11 39.61 -0.11 40.38 0.33 40.91C0.61 41.26 6.24 47.94 14.15 50.69ZM28.12 59.27C28.12 60.55 28.27 61.8 28.52 63.02C23.14 65.8 16.72 65.97 14.08 65.9C14.01 63.26 14.18 56.86 16.97 51.47C18.18 51.72 19.43 51.87 20.71 51.87C24.44 51.87 27.89 50.7 30.87 49.13C29.29 52.09 28.12 55.55 28.12 59.27ZM39.99 76.62C37.53 74.28 30.98 67.3 30.98 59.27C30.98 53.17 34.76 47.67 37.65 44.36C38.62 43.5 39.41 42.72 39.98 42.12C40.55 42.72 41.35 43.5 42.31 44.36C45.2 47.67 48.98 53.16 48.98 59.27C49 67.3 42.45 74.29 39.99 76.62ZM65.9 65.9C63.27 65.97 56.85 65.79 51.47 63.02C51.72 61.81 51.87 60.56 51.87 59.27C51.87 55.54 50.7 52.09 49.13 49.12C52.11 50.69 55.56 51.86 59.28 51.86C60.56 51.86 61.81 51.71 63.02 51.46C65.79 56.85 65.97 63.26 65.9 65.9ZM76.62 39.99C74.28 42.45 67.3 49 59.27 49C53.17 49 47.67 45.22 44.36 42.32C43.51 41.36 42.73 40.56 42.12 39.99C42.72 39.42 43.5 38.62 44.36 37.66C47.67 34.77 53.17 30.98 59.27 30.98C67.31 30.98 74.29 37.53 76.62 39.99ZM51.86 20.71C51.86 19.43 51.71 18.18 51.46 16.97C56.84 14.19 63.26 14.02 65.89 14.09C65.96 16.73 65.78 23.14 63.01 28.52C61.8 28.27 60.55 28.12 59.27 28.12C55.54 28.12 52.09 29.29 49.12 30.86C50.69 27.88 51.86 24.43 51.86 20.71ZM39.99 3.36C42.45 5.7 49 12.68 49 20.71C49 26.81 45.22 32.3 42.33 35.62C41.36 36.48 40.57 37.26 40 37.86C39.43 37.26 38.63 36.48 37.67 35.62C34.78 32.31 31 26.82 31 20.71C30.98 12.67 37.53 5.69 39.99 3.36ZM14.08 14.08C16.73 14.01 23.13 14.19 28.51 16.96C28.26 18.17 28.11 19.42 28.11 20.7C28.11 24.43 29.28 27.88 30.85 30.85C27.87 29.28 24.42 28.11 20.69 28.11C19.41 28.11 18.16 28.26 16.95 28.51C14.19 23.13 14.01 16.72 14.08 14.08ZM20.71 30.98C26.81 30.98 32.31 34.76 35.62 37.65C36.48 38.62 37.26 39.41 37.86 39.98C37.25 40.56 36.46 41.37 35.59 42.35C32.28 45.24 26.81 48.99 20.71 48.99C12.68 48.99 5.69 42.44 3.36 39.98C5.69 37.53 12.67 30.98 20.71 30.98Z"/>
+      </svg>
+    </button>
+    <a class="nav-wordmark" href="#top">
+      <span class="nav-wordmark-full">
+        <span class="nav-wordmark-top">September 14 – 21, 2026</span>
+        <span class="nav-wordmark-bottom">Sarah &amp; Jeremy</span>
+      </span>
+      <span class="nav-wordmark-compact">S &amp; J</span>
+    </a>
   </div>
 </header>
 
-<section class="hero bg-hero" id="top">
-  <div class="hero-content">
-    <div class="hero-text">
-      <p class="eyebrow">Honeymoon</p>
-      <h1 class="hero-headline">Big Island &amp; Maui<br>September 14 – 21, 2026</h1>
-      <p class="hero-subheadline">
-        Sarah &amp; Jeremy
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7-4.8-9.3-9.4C1.4 8 2.7 4.8 5.7 4.1c2-.5 3.9.3 5 1.9 1-1.6 3-2.4 5-1.9 3 .7 4.3 3.9 3 7-2.3 4.6-9.3 9.4-9.3 9.4z"/></svg>
-        Wedding Day: September 12, 2026
-      </p>
-      <div class="countdown">
-        <span class="countdown-label" id="countdown-label">Countdown</span>
-        <span class="countdown-value" id="countdown-value">&nbsp;</span>
-      </div>
-    </div>
+<div class="site-menu" id="site-menu" aria-hidden="true">
+  <button class="site-menu-close" id="menu-close" aria-label="Close menu">&times;</button>
+  <nav class="site-menu-list">
+    <a href="index.html" class="is-current">Itinerary</a>
+    <a href="volcanoes.html">Hawaiʻi Volcanoes</a>
+    <a href="maui.html">South Maui</a>
+    <a href="ritz.html">Kapalua</a>
+    <a href="lahaina.html">Lahaina Lunch</a>
+  </nav>
+</div>
 
-    <img class="couple-avatar" src="photos/couple.jpg" alt="Sarah and Jeremy">
+<section class="hero" id="top">
+  <div class="hero-slide bg-hero" aria-hidden="true"></div>
+  <div class="hero-slide bg-hero-cove" aria-hidden="true"></div>
+  <div class="hero-slide bg-hero-lagoon" aria-hidden="true"></div>
+  <div class="hero-slide bg-hero-lava" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="hero-subtitle">Honeymoon</p>
+    <h1 class="hero-title">Big Island &amp; Maui</h1>
+    <p class="countdown" id="countdown">
+      <span class="countdown-value" id="countdown-value">&nbsp;</span>
+    </p>
   </div>
 </section>
 
 <main id="full-itinerary" class="timeline">
-  <h2 class="section-title">Full itinerary</h2>
+  <h2 class="section-title">Itinerary</h2>
+
+  <nav class="day-nav" aria-label="Jump to day">
+    <a href="#day-14">Mon Sep 14</a>
+    <a href="#day-16">Wed Sep 16</a>
+    <a href="#day-17">Thu Sep 17</a>
+    <a href="#day-18">Fri Sep 18</a>
+    <a href="#day-21">Mon Sep 21</a>
+  </nav>
 
   <section class="day" id="day-14">
     <div class="day-label">
@@ -51,42 +70,42 @@
     </div>
     <div class="events">
 
-      <article class="event flight bg-hero">
-        <div class="event-top">
-          <span class="event-tag">Flight</span>
-          <div class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16l20-7-7 20-3-8-8-3z"/></svg></div>
-        </div>
-        <div class="event-bottom">
-          <div class="event-time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>12:15 PM</div>
+      <article class="event flight">
+        <div class="event-photo bg-flight-depart">
+          <span class="event-time">12:15 PM</span>
           <h3>Denver → Kona</h3>
+        </div>
+        <div class="event-details">
+          <span class="event-tag">Flight</span>
           <p class="meta">United UA1758 · Boeing 757-200 · Nonstop, 7h 28m · lands 3:43 PM</p>
           <p class="meta">DEN → KOA</p>
         </div>
       </article>
 
-      <article class="event car bg-tilekona">
-        <div class="event-top">
-          <span class="event-tag">Rental Car</span>
-          <div class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l1.5-5A2 2 0 0 1 6.4 6.5h11.2A2 2 0 0 1 19.5 8l1.5 5"/><rect x="2" y="13" width="20" height="6" rx="2"/><circle cx="7" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg></div>
-        </div>
-        <div class="event-bottom">
-          <div class="event-time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>3:30 PM</div>
+      <article class="event car">
+        <div class="event-photo bg-car-alamo">
+          <span class="event-time">3:30 PM</span>
           <h3>Pick-up — Alamo</h3>
+        </div>
+        <div class="event-details">
+          <span class="event-tag">Rental Car</span>
           <p class="meta">Jeep Wrangler Unlimited (4-door) or similar</p>
-          <p class="meta">Kona International Airport (KOA)</p>
+          <p class="meta">Kona International Airport (KOA) — shuttle from baggage claim to the Alamo lot</p>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Alamo+Rent+A+Car,+Kailua-Kona,+HI" target="_blank" rel="noopener">Open in Google Maps ↗</a>
         </div>
       </article>
 
-      <article class="event hotel bg-hero">
-        <div class="event-top">
-          <span class="event-tag">Hotel</span>
-          <div class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 4l9 6.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg></div>
-        </div>
-        <div class="event-bottom">
-          <div class="event-time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>4:00 PM</div>
+      <article class="event hotel">
+        <div class="event-photo bg-kalani-real">
+          <span class="event-time">4:00 PM</span>
           <h3>Check in — Kalani Oceanside Retreat</h3>
+        </div>
+        <div class="event-details">
+          <span class="event-tag">Hotel</span>
           <p class="meta">1 King Bed, Ocean View, Garden Area</p>
           <p class="meta">12-6870 Kalapana Kapoho Rd, Pahoa, HI 96778</p>
+          <p class="meta">Check out: Wed, Sep 16 · 11:00 AM</p>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Kalani+Oceanside+Retreat,+12-6870+Kalapana+Kapoho+Rd,+Pahoa,+HI+96778" target="_blank" rel="noopener">Open in Google Maps ↗</a>
         </div>
       </article>
 
@@ -100,65 +119,77 @@
     </div>
     <div class="events">
 
-      <article class="event hotel checkout bg-tilekona">
-        <div class="event-top">
-          <span class="event-tag">Hotel · Check-out</span>
-          <div class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 4l9 6.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg></div>
-        </div>
-        <div class="event-bottom">
-          <div class="event-time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>11:00 AM</div>
-          <h3>Check out — Kalani Oceanside Retreat</h3>
-        </div>
-      </article>
-
-      <article class="event car checkout bg-tilekona">
-        <div class="event-top">
-          <span class="event-tag">Rental Car · Return</span>
-          <div class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l1.5-5A2 2 0 0 1 6.4 6.5h11.2A2 2 0 0 1 19.5 8l1.5 5"/><rect x="2" y="13" width="20" height="6" rx="2"/><circle cx="7" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg></div>
-        </div>
-        <div class="event-bottom">
-          <div class="event-time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Noon</div>
+      <article class="event car checkout">
+        <div class="event-photo bg-tilekona">
+          <span class="event-time">12:00 PM</span>
           <h3>Return — Alamo</h3>
-          <p class="meta">Kona International Airport (KOA)</p>
+        </div>
+        <div class="event-details">
+          <span class="event-tag">Rental Car · Return</span>
+          <p class="meta">Kona International Airport (KOA) — shuttle from baggage claim to the Alamo lot</p>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Alamo+Rent+A+Car,+Kailua-Kona,+HI" target="_blank" rel="noopener">Open in Google Maps ↗</a>
         </div>
       </article>
 
-      <article class="event flight bg-tileisland">
-        <div class="event-top">
-          <span class="event-tag">Flight</span>
-          <div class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16l20-7-7 20-3-8-8-3z"/></svg></div>
-        </div>
-        <div class="event-bottom">
-          <div class="event-time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>1:52 PM</div>
+      <article class="event flight">
+        <div class="event-photo bg-flight-interisland">
+          <span class="event-time">1:52 PM</span>
           <h3>Kona → Kahului</h3>
+        </div>
+        <div class="event-details">
+          <span class="event-tag">Flight</span>
           <p class="meta">Hawaiian Airlines AS1259 (operated by Alaska) · lands 2:29 PM</p>
           <p class="meta">KOA → OGG</p>
         </div>
       </article>
 
-      <article class="event car bg-kihei">
-        <div class="event-top">
-          <span class="event-tag">Rental Car</span>
-          <div class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l1.5-5A2 2 0 0 1 6.4 6.5h11.2A2 2 0 0 1 19.5 8l1.5 5"/><rect x="2" y="13" width="20" height="6" rx="2"/><circle cx="7" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg></div>
-        </div>
-        <div class="event-bottom">
-          <div class="event-time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>2:00 PM</div>
+      <article class="event car">
+        <div class="event-photo bg-car-sixt">
+          <span class="event-time">2:00 PM</span>
           <h3>Pick-up — Sixt (via Priceline)</h3>
+        </div>
+        <div class="event-details">
+          <span class="event-tag">Rental Car</span>
           <p class="meta">Toyota RAV4 or similar, Mid-Size SUV</p>
           <p class="meta">Kahului Airport (OGG) — Consolidated Rental Facility</p>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Sixt+Rent+A+Car,+101+Airport+Rd,+Kahului,+HI+96732" target="_blank" rel="noopener">Open in Google Maps ↗</a>
         </div>
       </article>
 
-      <article class="event hotel bg-kihei">
-        <div class="event-top">
-          <span class="event-tag">Hotel</span>
-          <div class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 4l9 6.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg></div>
-        </div>
-        <div class="event-bottom">
-          <div class="event-time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>4:00 PM</div>
+      <article class="event hotel">
+        <div class="event-photo bg-aston-real">
+          <span class="event-time">4:00 PM</span>
           <h3>Check in — Aston Maui Hill</h3>
+        </div>
+        <div class="event-details">
+          <span class="event-tag">Hotel</span>
           <p class="meta">Suite, 1 Bedroom, Ocean View</p>
           <p class="meta">2881 S Kihei Rd, Kihei, HI 96753</p>
+          <p class="meta">Check out: Fri, Sep 18 · 11:00 AM</p>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Aston+Maui+Hill,+2881+S+Kihei+Rd,+Kihei,+HI+96753" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="day" id="day-17">
+    <div class="day-label">
+      <span class="date">Thu, Sep 17</span>
+      <span class="day-tag">Dive day</span>
+    </div>
+    <div class="events">
+
+      <article class="event dive">
+        <div class="event-photo bg-dive-scuba">
+          <span class="event-time">6:15 AM</span>
+          <h3>Molokini Crater 2-Tank Dive</h3>
+        </div>
+        <div class="event-details">
+          <span class="event-tag">Boat Charter · 6 hrs</span>
+          <p class="meta">Maui Diamond Sea Sports · Jeremy diving (2 tanks), Sarah snorkeling with a private guide</p>
+          <p class="meta">Meet at 101 Maalaea Rd, Slip #23, Wailuku, HI 96793 · back by 12:15 PM</p>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=101+Maalaea+Rd,+Wailuku,+HI+96793" target="_blank" rel="noopener">Open in Google Maps ↗</a>
         </div>
       </article>
 
@@ -172,27 +203,17 @@
     </div>
     <div class="events">
 
-      <article class="event hotel checkout bg-kihei">
-        <div class="event-top">
-          <span class="event-tag">Hotel · Check-out</span>
-          <div class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 4l9 6.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg></div>
-        </div>
-        <div class="event-bottom">
-          <div class="event-time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>11:00 AM</div>
-          <h3>Check out — Aston Maui Hill</h3>
-        </div>
-      </article>
-
-      <article class="event hotel bg-tileritz">
-        <div class="event-top">
-          <span class="event-tag">Hotel</span>
-          <div class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 4l9 6.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg></div>
-        </div>
-        <div class="event-bottom">
-          <div class="event-time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>4:00 PM</div>
+      <article class="event hotel">
+        <div class="event-photo bg-ritz-real">
+          <span class="event-time">4:00 PM</span>
           <h3>Check in — The Ritz-Carlton Maui, Kapalua</h3>
+        </div>
+        <div class="event-details">
+          <span class="event-tag">Hotel</span>
           <p class="meta">Deluxe Room, 1 King Bed, Lanai, Resort View</p>
           <p class="meta">1 Ritz-Carlton Drive, Kapalua, HI 96761</p>
+          <p class="meta">Check out: Mon, Sep 21 · 12:00 PM</p>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=The+Ritz-Carlton+Maui,+Kapalua,+1+Ritz-Carlton+Drive,+Kapalua,+HI+96761" target="_blank" rel="noopener">Open in Google Maps ↗</a>
         </div>
       </article>
 
@@ -206,53 +227,39 @@
     </div>
     <div class="events">
 
-      <article class="event car checkout bg-tileisland">
-        <div class="event-top">
-          <span class="event-tag">Rental Car · Return</span>
-          <div class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l1.5-5A2 2 0 0 1 6.4 6.5h11.2A2 2 0 0 1 19.5 8l1.5 5"/><rect x="2" y="13" width="20" height="6" rx="2"/><circle cx="7" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg></div>
-        </div>
-        <div class="event-bottom">
-          <div class="event-time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>5:00 AM</div>
+      <article class="event car checkout">
+        <div class="event-photo bg-car-sixt">
+          <span class="event-time">5:00 AM</span>
           <h3>Return — Sixt</h3>
+        </div>
+        <div class="event-details">
+          <span class="event-tag">Rental Car · Return</span>
           <p class="meta">Kahului Airport (OGG)</p>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Sixt+Rent+A+Car,+101+Airport+Rd,+Kahului,+HI+96732" target="_blank" rel="noopener">Open in Google Maps ↗</a>
         </div>
       </article>
 
-      <article class="event flight bg-tileisland">
-        <div class="event-top">
-          <span class="event-tag">Flight</span>
-          <div class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16l20-7-7 20-3-8-8-3z"/></svg></div>
-        </div>
-        <div class="event-bottom">
-          <div class="event-time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>7:00 AM</div>
+      <article class="event flight">
+        <div class="event-photo bg-flight-coast">
+          <span class="event-time">7:00 AM</span>
           <h3>Kahului → San Francisco</h3>
+        </div>
+        <div class="event-details">
+          <span class="event-tag">Flight</span>
           <p class="meta">United UA1958 · lands 2:59 PM · 1h 19m layover</p>
           <p class="meta">OGG → SFO</p>
         </div>
       </article>
 
-      <article class="event flight bg-tilehome">
-        <div class="event-top">
-          <span class="event-tag">Flight</span>
-          <div class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16l20-7-7 20-3-8-8-3z"/></svg></div>
-        </div>
-        <div class="event-bottom">
-          <div class="event-time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>4:18 PM</div>
+      <article class="event flight">
+        <div class="event-photo bg-tilehome">
+          <span class="event-time">4:18 PM</span>
           <h3>San Francisco → Denver</h3>
+        </div>
+        <div class="event-details">
+          <span class="event-tag">Flight</span>
           <p class="meta">United UA1430 · lands 8:07 PM</p>
           <p class="meta">SFO → DEN</p>
-        </div>
-      </article>
-
-      <article class="event hotel checkout bg-tileritz">
-        <div class="event-top">
-          <span class="event-tag">Hotel · Check-out</span>
-          <div class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 4l9 6.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg></div>
-        </div>
-        <div class="event-bottom">
-          <div class="event-time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Noon</div>
-          <h3>Ritz-Carlton checkout deadline</h3>
-          <p class="meta">Standard policy time — you'll be departing well before this</p>
         </div>
       </article>
 
@@ -267,23 +274,84 @@
 
 <script>
 (function () {
-  var tripStart = new Date('2026-09-14T00:00:00');
-  var tripEnd = new Date('2026-09-22T00:00:00');
-  var now = new Date();
-  var label = document.getElementById('countdown-label');
-  var value = document.getElementById('countdown-value');
-  if (!label || !value) return;
+  var toggle = document.getElementById('menu-toggle');
+  var menu = document.getElementById('site-menu');
+  var closeBtn = document.getElementById('menu-close');
+  if (!toggle || !menu) return;
 
-  var days = Math.ceil((tripStart - now) / 86400000);
-
-  label.textContent = 'Countdown';
-  if (days > 0) {
-    value.textContent = days + (days === 1 ? ' Day' : ' Days');
-  } else if (now < tripEnd) {
-    value.textContent = 'On the Honeymoon';
-  } else {
-    value.textContent = 'Trip Complete';
+  function openMenu() {
+    menu.classList.add('is-open');
+    menu.setAttribute('aria-hidden', 'false');
+    toggle.setAttribute('aria-expanded', 'true');
   }
+  function closeMenu() {
+    menu.classList.remove('is-open');
+    menu.setAttribute('aria-hidden', 'true');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  toggle.addEventListener('click', openMenu);
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  menu.addEventListener('click', function (e) {
+    if (e.target === menu) closeMenu();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeMenu();
+  });
+})();
+</script>
+
+<script>
+(function () {
+  var nav = document.getElementById('site-nav');
+  if (!nav) return;
+  var ticking = false;
+
+  function update() {
+    nav.classList.toggle('is-scrolled', window.scrollY > 80);
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      requestAnimationFrame(update);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  update();
+})();
+</script>
+
+<script>
+(function () {
+  var tripStart = new Date('2026-09-14T12:15:00');
+  var tripEnd = new Date('2026-09-22T00:00:00');
+  var value = document.getElementById('countdown-value');
+  if (!value) return;
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function tick() {
+    var now = new Date();
+    var ms = tripStart - now;
+
+    if (ms > 0) {
+      var totalSeconds = Math.floor(ms / 1000);
+      var d = Math.floor(totalSeconds / 86400);
+      var h = Math.floor((totalSeconds % 86400) / 3600);
+      var m = Math.floor((totalSeconds % 3600) / 60);
+      var s = totalSeconds % 60;
+      value.textContent = d + 'd ' + pad(h) + 'h ' + pad(m) + 'm ' + pad(s) + 's';
+    } else if (now < tripEnd) {
+      value.textContent = 'On the honeymoon';
+    } else {
+      value.textContent = 'Married · September 12, 2026';
+    }
+  }
+
+  tick();
+  setInterval(tick, 1000);
 })();
 </script>
 
