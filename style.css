@@ -78,7 +78,6 @@ a:focus-visible, button:focus-visible {
   left: 0;
   right: 0;
   z-index: 30;
-  padding-top: env(safe-area-inset-top);
   background: transparent;
   pointer-events: none;
   transition: background 0.35s ease, box-shadow 0.35s ease;
