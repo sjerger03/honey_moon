@@ -188,7 +188,7 @@ a:focus-visible, button:focus-visible {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 0.4rem 1.1rem;
+  gap: 1.1rem;
   max-width: 100%;
   margin: 1.75rem 0 0;
 }
