@@ -41,7 +41,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   overflow-x: hidden;
-  background: linear-gradient(180deg, var(--sand) 0%, var(--sand-deep) 55%, var(--sand) 100%);
+  background: var(--sand);
   color: var(--ink);
   font-family: var(--font-body);
   line-height: 1.5;
