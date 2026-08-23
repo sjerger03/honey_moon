@@ -37,6 +37,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+html, body { overscroll-behavior-y: none; }
 
 body {
   margin: 0;
@@ -78,8 +79,12 @@ a:focus-visible, button:focus-visible {
   left: 0;
   right: 0;
   z-index: 30;
+  padding-top: env(safe-area-inset-top);
   background: transparent;
   pointer-events: none;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
   transition: background 0.35s ease, box-shadow 0.35s ease;
 }
 
