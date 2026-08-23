@@ -220,7 +220,7 @@ a:focus-visible, button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(5, 5, 5, 0.97);
+  background: var(--sand);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
@@ -237,7 +237,7 @@ a:focus-visible, button:focus-visible {
   right: 1.5rem;
   background: none;
   border: none;
-  color: #fff;
+  color: var(--ink);
   font-size: 1.8rem;
   line-height: 1;
   cursor: pointer;
@@ -257,7 +257,7 @@ a:focus-visible, button:focus-visible {
   font-size: clamp(2rem, 6vw, 3.5rem);
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: var(--ink);
   text-decoration: none;
   opacity: 0.55;
   transition: opacity 0.2s ease, color 0.2s ease;
@@ -266,7 +266,7 @@ a:focus-visible, button:focus-visible {
 .site-menu-list a:hover,
 .site-menu-list a.is-current {
   opacity: 1;
-  color: var(--gold-bright);
+  color: var(--gold);
 }
 
 /* ---------- Hero ---------- */
