@@ -96,23 +96,18 @@ a:focus-visible, button:focus-visible {
   order: 2;
   margin-right: -0.5rem;
   pointer-events: auto;
-  background: none;
-  border: 2px solid transparent;
+  background: var(--sand);
+  border: 2px solid var(--ink);
   border-radius: 50%;
   padding: 0.5rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  transition: transform 0.15s ease;
 }
 
-.site-nav.is-scrolled .nav-menu-toggle {
-  background: var(--sand);
-  border-color: var(--ink);
-}
-
-.site-nav.is-scrolled .nav-menu-toggle:hover {
+.nav-menu-toggle:hover {
   transform: translate(2px, 2px);
 }
 
@@ -120,14 +115,13 @@ a:focus-visible, button:focus-visible {
   display: block;
   width: 38px;
   height: 38px;
-  color: #fff;
-  transition: color 0.35s ease, width 0.25s ease, height 0.25s ease;
+  color: var(--ink);
+  transition: width 0.25s ease, height 0.25s ease;
 }
 
 .site-nav.is-scrolled .nav-flower-icon {
   width: 28px;
   height: 28px;
-  color: var(--ink);
 }
 
 .nav-wordmark {
