@@ -7,26 +7,18 @@
   --muted: #6b6459;
   --line: rgba(20, 18, 15, 0.14);
   --font-display: "Fredoka", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  --font-script: "Lobster", "Brush Script MT", cursive;
-  --font-script-alt: "Kaushan Script", "Brush Script MT", cursive;
+  --font-script: "Carter One", "Brush Script MT", cursive;
+  --font-script-alt: "Carter One", "Brush Script MT", cursive;
   --font-label: "Karla", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   --font-body: "Karla", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 @font-face {
-  font-family: "Kaushan Script";
+  font-family: "Carter One";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("fonts/kaushan-script.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Lobster";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("fonts/lobster.woff2") format("woff2");
+  src: url("fonts/carter-one.woff2") format("woff2");
 }
 
 @font-face {
