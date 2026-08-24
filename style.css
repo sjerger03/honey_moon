@@ -6,27 +6,28 @@
   --ink: #1a1815;
   --muted: #6b6459;
   --line: rgba(20, 18, 15, 0.14);
-  --font-display: "Changa One", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  --font-script: "Vujahday Script", "Brush Script MT", cursive;
-  --font-script-alt: "Vujahday Script", "Brush Script MT", cursive;
+  --font-display: "Bungee", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-script: "Grand Hotel", "Brush Script MT", cursive;
+  --font-script-alt: "Grand Hotel", "Brush Script MT", cursive;
   --font-label: "Karla", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  --font-body: "Space Mono", "SFMono-Regular", Consolas, Menlo, monospace;
+  --font-body: "Karla", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: "Space Mono", "SFMono-Regular", Consolas, Menlo, monospace;
 }
 
 @font-face {
-  font-family: "Vujahday Script";
+  font-family: "Grand Hotel";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("fonts/vujahday-script.woff2") format("woff2");
+  src: url("fonts/grand-hotel.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Changa One";
+  font-family: "Bungee";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("fonts/changa-one.woff2") format("woff2");
+  src: url("fonts/bungee.woff2") format("woff2");
 }
 
 @font-face {
@@ -421,7 +422,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .countdown-value {
-  font-family: var(--font-body);
+  font-family: var(--font-mono);
   font-weight: 700;
   font-size: clamp(1.3rem, 2.8vw, 1.75rem);
   letter-spacing: 0.03em;
