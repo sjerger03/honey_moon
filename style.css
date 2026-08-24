@@ -7,7 +7,7 @@
   --muted: #6b6459;
   --line: rgba(20, 18, 15, 0.14);
   --font-display: "Playfair Display", "Iowan Old Style", Palatino, Georgia, serif;
-  --font-script: "Pinyon Script", "Brush Script MT", cursive;
+  --font-script: "Gwendolyn", "Brush Script MT", cursive;
   --font-body: "Nunito Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
@@ -25,6 +25,14 @@
   font-style: normal;
   font-display: swap;
   src: url("fonts/pinyon-script.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gwendolyn";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/gwendolyn.woff2") format("woff2");
 }
 
 @font-face {
