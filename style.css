@@ -9,8 +9,8 @@
   --font-display: "Karla", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   --font-script: "Fraunces", Georgia, serif;
   --font-script-alt: "Fraunces", Georgia, serif;
-  --font-label: "Karla", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  --font-body: "Karla", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-label: "Inter", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-body: "Inter", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 @font-face {
@@ -27,6 +27,14 @@
   font-style: normal;
   font-display: swap;
   src: url("fonts/karla-variable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/inter-variable.woff2") format("woff2");
 }
 
 * { box-sizing: border-box; }
