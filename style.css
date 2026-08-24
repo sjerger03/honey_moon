@@ -190,7 +190,7 @@ a:focus-visible, button:focus-visible {
   padding: 0.55rem 1.2rem;
   background: var(--sand-deep);
   color: var(--ink);
-  font-size: 0.68rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -549,7 +549,7 @@ a:focus-visible, button:focus-visible {
   background: var(--gold-bright);
   color: var(--ink);
   font-family: var(--font-body);
-  font-size: 0.68rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -741,7 +741,7 @@ footer {
   background: var(--gold-bright);
   border: 2px solid var(--ink);
   color: var(--ink);
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
