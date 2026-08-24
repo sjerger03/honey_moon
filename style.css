@@ -410,6 +410,10 @@ a:focus-visible, button:focus-visible {
   padding: 1rem 1.25rem 4rem;
 }
 
+.timeline > section {
+  margin-bottom: 3.5rem;
+}
+
 .section-title {
   font-family: var(--font-display);
   font-weight: 800;
@@ -667,7 +671,6 @@ footer {
 
 /* ---------- Conditions ---------- */
 
-.conditions { margin-bottom: 3.5rem; }
 
 .conditions-card {
   max-width: 34rem;
@@ -723,7 +726,7 @@ footer {
 
 /* ---------- Map ---------- */
 
-.volcano-map { margin-bottom: 3.5rem; text-align: center; }
+.volcano-map { text-align: center; }
 
 .map-note {
   max-width: 34rem;
