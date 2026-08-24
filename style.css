@@ -348,7 +348,7 @@ a:focus-visible, button:focus-visible {
 .hero-subtitle {
   max-width: 100%;
   min-width: 0;
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.3rem;
   font-family: var(--font-script);
   font-weight: 400;
   font-size: clamp(2.9rem, 6.5vw, 4.6rem);
@@ -360,7 +360,7 @@ a:focus-visible, button:focus-visible {
 .hero-title {
   max-width: 100%;
   min-width: 0;
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.3rem;
   font-family: var(--font-display);
   font-weight: 800;
   font-size: clamp(2.3rem, 6.5vw, 4.6rem);
@@ -371,7 +371,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .countdown {
-  margin: 0.1rem 0 1.75rem;
+  margin: 0 0 1.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
