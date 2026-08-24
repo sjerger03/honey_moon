@@ -105,24 +105,25 @@ a:focus-visible, button:focus-visible {
   left: 1.25rem;
   transform: translateY(-50%);
   pointer-events: auto;
-  background: none;
-  border: none;
+  background: var(--sand);
+  border: 2px solid var(--ink);
   border-radius: 50%;
   padding: 0.5rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.nav-menu-toggle:hover {
+  transform: translateY(-50%) translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--ink);
 }
 
 .nav-flower-icon {
   display: block;
-  color: #fff;
-  transition: color 0.35s ease;
-}
-
-.site-nav.is-scrolled .nav-flower-icon {
   color: var(--ink);
 }
 
@@ -133,37 +134,14 @@ a:focus-visible, button:focus-visible {
   transform: translate(-50%, -50%);
   pointer-events: auto;
   text-decoration: none;
-  color: #fff;
   text-align: center;
 }
 
 .nav-wordmark-full {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: opacity 0.35s ease;
-}
-
-.nav-wordmark-top {
-  font-family: var(--font-label);
-  font-weight: 700;
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.nav-wordmark-bottom {
-  margin-top: 0.15rem;
-  font-size: 0.6rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.75);
+  display: none;
 }
 
 .nav-wordmark-compact {
-  position: absolute;
-  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,28 +150,25 @@ a:focus-visible, button:focus-visible {
   font-style: italic;
   font-size: 1.6rem;
   letter-spacing: 0;
-  color: var(--ink);
-  opacity: 0;
-  transition: opacity 0.35s ease;
+  color: #fff;
+  transition: color 0.35s ease;
 }
 
-/* Mobile: nav stays transparent always; scrolled state gets a white
-   circle behind the icon instead of a full bar, and the wordmark just
-   disappears rather than swapping to the compact "S & J" form. */
+.site-nav.is-scrolled .nav-wordmark-compact {
+  color: var(--ink);
+}
+
+/* Mobile: nav stays transparent always; scrolled state gets a solid
+   circle behind the icon, and the wordmark disappears rather than
+   sticking around in a full bar. */
 @media (max-width: 640px) {
-  .site-nav.is-scrolled .nav-menu-toggle {
-    background: var(--sand);
-    box-shadow: 0 3px 10px rgba(20, 18, 15, 0.2), 0 1px 3px rgba(20, 18, 15, 0.14);
-  }
   .site-nav.is-scrolled .nav-wordmark { opacity: 0; pointer-events: none; }
 }
 
-/* Desktop/tablet: full white bar + "S & J" compact wordmark on scroll. */
+/* Desktop/tablet: solid bar appears behind the nav on scroll. */
 @media (min-width: 641px) {
   .site-nav { transition: background 0.35s ease, box-shadow 0.35s ease; }
   .site-nav.is-scrolled { background: var(--sand); box-shadow: 0 1px 0 var(--line); }
-  .site-nav.is-scrolled .nav-wordmark-full { opacity: 0; }
-  .site-nav.is-scrolled .nav-wordmark-compact { opacity: 1; }
 }
 
 .day-nav {
@@ -256,13 +231,26 @@ a:focus-visible, button:focus-visible {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  background: none;
-  border: none;
+  width: 2.6rem;
+  height: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  box-shadow: 3px 3px 0 var(--ink);
   color: var(--ink);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.site-menu-close:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--ink);
 }
 
 .site-menu-list {
