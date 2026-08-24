@@ -1,8 +1,8 @@
 :root {
-  --gold: #9c7a2e;
-  --gold-bright: #e8c774;
-  --sand: #ffffff;
-  --sand-deep: #f6f4ef;
+  --gold: #337662;
+  --gold-bright: #e47c40;
+  --sand: #e0dccc;
+  --sand-deep: #d5d0ba;
   --ink: #1a1815;
   --muted: #6b6459;
   --line: rgba(20, 18, 15, 0.14);
@@ -189,8 +189,8 @@ a:focus-visible, button:focus-visible {
   justify-content: center;
   align-items: center;
   gap: 1.1rem;
-  max-width: 100%;
-  margin: 3rem 0 0;
+  max-width: 30rem;
+  margin: 3rem auto 0;
 }
 
 .day-nav a {
