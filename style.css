@@ -187,8 +187,8 @@ a:focus-visible, button:focus-visible {
 }
 
 .day-nav a {
-  padding: 0.55rem 1.1rem;
-  background: var(--gold-bright);
+  padding: 0.55rem 1.2rem;
+  background: var(--sand-deep);
   color: var(--ink);
   font-size: 0.68rem;
   font-weight: 700;
@@ -196,12 +196,15 @@ a:focus-visible, button:focus-visible {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  border-radius: 2px;
-  transition: background 0.2s ease;
+  border-radius: 999px;
+  border: 2px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 .day-nav a:hover {
-  background: var(--gold);
-  color: var(--sand);
+  background: var(--sand);
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--ink);
 }
 
 @media (max-width: 560px) {
@@ -542,7 +545,7 @@ a:focus-visible, button:focus-visible {
   z-index: 1;
   display: inline-block;
   margin-top: 0.75rem;
-  padding: 0.55rem 1.1rem;
+  padding: 0.55rem 1.2rem;
   background: var(--gold-bright);
   color: var(--ink);
   font-family: var(--font-body);
@@ -550,7 +553,15 @@ a:focus-visible, button:focus-visible {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  border-radius: 2px;
+  border-radius: 999px;
+  border: 2px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.event-cta:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--ink);
 }
 
 .event-details {
@@ -727,17 +738,22 @@ footer {
   display: inline-block;
   margin-top: 1.25rem;
   padding: 0.85rem 1.75rem;
-  border: 1px solid var(--gold);
-  color: var(--gold);
+  background: var(--gold-bright);
+  border: 2px solid var(--ink);
+  color: var(--ink);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 2px;
-  transition: background 0.2s ease, color 0.2s ease;
+  border-radius: 999px;
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-.map-route-cta:hover { background: var(--gold); color: #fff; }
+.map-route-cta:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--ink);
+}
 
 .bg-hero { background-image: url("photos/hero.jpg"); }
 .bg-hero-cove { background-image: url("photos/hero-cove.jpg"); }
