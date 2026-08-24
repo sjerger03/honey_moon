@@ -6,11 +6,11 @@
   --ink: #1a1815;
   --muted: #6b6459;
   --line: rgba(20, 18, 15, 0.14);
-  --font-display: "Fredoka", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-display: "Changa One", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   --font-script: "Carter One", "Brush Script MT", cursive;
   --font-script-alt: "Carter One", "Brush Script MT", cursive;
   --font-label: "Karla", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  --font-body: "Karla", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-body: "Space Mono", "SFMono-Regular", Consolas, Menlo, monospace;
 }
 
 @font-face {
@@ -22,11 +22,11 @@
 }
 
 @font-face {
-  font-family: "Fredoka";
-  font-weight: 400 700;
+  font-family: "Changa One";
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("fonts/fredoka-variable.woff2") format("woff2");
+  src: url("fonts/changa-one.woff2") format("woff2");
 }
 
 @font-face {
@@ -35,6 +35,22 @@
   font-style: normal;
   font-display: swap;
   src: url("fonts/karla-variable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/space-mono-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/space-mono-700.woff2") format("woff2");
 }
 
 * { box-sizing: border-box; }
