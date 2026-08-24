@@ -371,7 +371,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .countdown {
-  margin: 0;
+  margin: 1.75rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -382,14 +382,14 @@ a:focus-visible, button:focus-visible {
 .countdown::after {
   content: "";
   align-self: stretch;
-  height: 2px;
+  height: 1px;
   background: rgba(255, 255, 255, 0.6);
 }
 
 .countdown-value {
   font-family: var(--font-body);
   font-weight: 800;
-  font-size: clamp(1.3rem, 2.8vw, 1.75rem);
+  font-size: clamp(1.1rem, 2.2vw, 1.4rem);
   letter-spacing: 0.03em;
   font-variant-numeric: tabular-nums;
 }
