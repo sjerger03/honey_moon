@@ -513,8 +513,6 @@ a:focus-visible, button:focus-visible {
   justify-content: flex-end;
   align-items: flex-start;
   padding: 1.1rem;
-  border-radius: 6px;
-  overflow: hidden;
 }
 
 .event-photo::after {
