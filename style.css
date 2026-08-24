@@ -9,7 +9,7 @@
   --font-display: "Unbounded", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   --font-script: "Fraunces", Georgia, serif;
   --font-script-alt: "Fraunces", Georgia, serif;
-  --font-label: "Space Mono", "SFMono-Regular", Consolas, Menlo, monospace;
+  --font-label: "Inter", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   --font-body: "Inter", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
@@ -27,14 +27,6 @@
   font-style: normal;
   font-display: swap;
   src: url("fonts/unbounded-bold.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Space Mono";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url("fonts/space-mono-700.woff2") format("woff2");
 }
 
 @font-face {
