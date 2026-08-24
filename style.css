@@ -6,7 +6,7 @@
   --ink: #1a1815;
   --muted: #6b6459;
   --line: rgba(20, 18, 15, 0.14);
-  --font-display: "Karla", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
   --font-script: "Fraunces", Georgia, serif;
   --font-script-alt: "Fraunces", Georgia, serif;
   --font-label: "Inter", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -22,11 +22,11 @@
 }
 
 @font-face {
-  font-family: "Karla";
-  font-weight: 400 800;
+  font-family: "Fraunces";
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("fonts/karla-variable.woff2") format("woff2");
+  src: url("fonts/fraunces-bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -137,9 +137,9 @@ a:focus-visible, button:focus-visible {
 }
 
 .nav-wordmark-top {
-  font-family: var(--font-display);
+  font-family: var(--font-label);
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -385,11 +385,10 @@ a:focus-visible, button:focus-visible {
   min-width: 0;
   margin: 0 0 1.1rem;
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 700;
   font-size: clamp(2.8rem, 7.5vw, 5.5rem);
   line-height: 1.05;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
+  letter-spacing: -0.01em;
   text-wrap: balance;
 }
 
@@ -437,8 +436,7 @@ a:focus-visible, button:focus-visible {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(1.7rem, 3vw, 2.3rem);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  letter-spacing: -0.01em;
   color: var(--ink);
   margin: 0 0 2.5rem;
   text-align: center;
@@ -470,7 +468,7 @@ a:focus-visible, button:focus-visible {
 .day-label .date {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: var(--ink);
 }
 
@@ -565,7 +563,8 @@ a:focus-visible, button:focus-visible {
   color: #fff;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  letter-spacing: -0.005em;
   text-wrap: balance;
 }
 
@@ -698,10 +697,10 @@ footer {
 
 .conditions-status {
   display: block;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.3rem;
-  letter-spacing: 0.03em;
+  font-family: var(--font-label);
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
   color: var(--ink);
