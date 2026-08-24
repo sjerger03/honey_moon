@@ -6,7 +6,7 @@
   --ink: #1a1815;
   --muted: #6b6459;
   --line: rgba(20, 18, 15, 0.14);
-  --font-display: "Bungee", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-display: "Bebas Neue", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   --font-script: "Grand Hotel", "Brush Script MT", cursive;
   --font-script-alt: "Grand Hotel", "Brush Script MT", cursive;
   --font-label: "Karla", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -23,11 +23,11 @@
 }
 
 @font-face {
-  font-family: "Bungee";
+  font-family: "Bebas Neue";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("fonts/bungee.woff2") format("woff2");
+  src: url("fonts/bebas-neue.woff2") format("woff2");
 }
 
 @font-face {
@@ -155,8 +155,9 @@ a:focus-visible, button:focus-visible {
 
 .nav-wordmark-top {
   font-family: var(--font-display);
-  font-size: 0.95rem;
-  letter-spacing: 0.06em;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .nav-wordmark-bottom {
@@ -175,8 +176,8 @@ a:focus-visible, button:focus-visible {
   align-items: center;
   justify-content: center;
   font-family: var(--font-script-alt);
-  font-size: 1.5rem;
-  letter-spacing: 0.02em;
+  font-size: 1.6rem;
+  letter-spacing: 0;
   color: var(--ink);
   opacity: 0;
   transition: opacity 0.35s ease;
@@ -388,7 +389,7 @@ a:focus-visible, button:focus-visible {
   font-family: var(--font-script);
   font-weight: 400;
   font-size: clamp(2.6rem, 6vw, 4.2rem);
-  line-height: 1;
+  line-height: 1.15;
   color: #fff;
 }
 
@@ -399,8 +400,8 @@ a:focus-visible, button:focus-visible {
   font-family: var(--font-display);
   font-weight: 400;
   font-size: clamp(2.8rem, 7.5vw, 5.5rem);
-  line-height: 1.08;
-  letter-spacing: 0.05em;
+  line-height: 1;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   text-wrap: balance;
 }
@@ -448,8 +449,8 @@ a:focus-visible, button:focus-visible {
 .section-title {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  letter-spacing: 0.04em;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--ink);
   margin: 0 0 2.5rem;
@@ -482,7 +483,9 @@ a:focus-visible, button:focus-visible {
 .day-label .date {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: var(--ink);
 }
 
@@ -577,7 +580,9 @@ a:focus-visible, button:focus-visible {
   color: #fff;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: 1.35rem;
+  font-size: 1.55rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   text-wrap: balance;
 }
 
@@ -711,7 +716,9 @@ footer {
 .conditions-status {
   display: block;
   font-family: var(--font-display);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   margin-bottom: 0.5rem;
   color: var(--ink);
 }
