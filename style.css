@@ -6,41 +6,26 @@
   --ink: #1a1815;
   --muted: #6b6459;
   --line: rgba(20, 18, 15, 0.14);
-  --font-display: "Playfair Display", "Iowan Old Style", Palatino, Georgia, serif;
-  --font-script: "Pinyon Script", "Brush Script MT", cursive;
-  --font-body: "Nunito Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-display: "Raleway", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-script: "Courgette", "Brush Script MT", cursive;
+  --font-label: "Courgette", "Brush Script MT", cursive;
+  --font-body: "Raleway", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 @font-face {
-  font-family: "Playfair Display";
+  font-family: "Courgette";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("fonts/playfair-400.woff2") format("woff2");
+  src: url("fonts/courgette.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Pinyon Script";
-  font-weight: 400;
+  font-family: "Raleway";
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-  src: url("fonts/pinyon-script.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Gwendolyn";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("fonts/gwendolyn.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Nunito Sans";
-  font-weight: 200 900;
-  font-style: normal;
-  font-display: swap;
-  src: url("fonts/nunitosans-variable.woff2") format("woff2");
+  src: url("fonts/raleway-variable.woff2") format("woff2");
 }
 
 * { box-sizing: border-box; }
@@ -203,9 +188,8 @@ a:focus-visible, button:focus-visible {
 
 .day-nav a {
   padding: 0.55rem 1.1rem;
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  color: #fff;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  background: var(--gold-bright);
+  color: var(--ink);
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -213,11 +197,11 @@ a:focus-visible, button:focus-visible {
   text-decoration: none;
   white-space: nowrap;
   border-radius: 2px;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  transition: background 0.2s ease;
 }
 .day-nav a:hover {
-  border-color: var(--gold-bright);
-  color: var(--gold-bright);
+  background: var(--gold);
+  color: var(--sand);
 }
 
 @media (max-width: 560px) {
@@ -432,11 +416,10 @@ a:focus-visible, button:focus-visible {
 }
 
 .group-title {
-  font-family: var(--font-body);
-  font-weight: 800;
+  font-family: var(--font-label);
+  font-weight: 400;
   font-size: 0.85rem;
   letter-spacing: 0.14em;
-  text-transform: uppercase;
   color: var(--gold);
   text-align: center;
   margin: 3rem 0 1.5rem;
@@ -462,9 +445,9 @@ a:focus-visible, button:focus-visible {
 }
 
 .day-label .day-tag {
+  font-family: var(--font-label);
   font-size: 0.68rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 400;
   letter-spacing: 0.16em;
   color: var(--gold);
 }
@@ -578,9 +561,9 @@ a:focus-visible, button:focus-visible {
   display: block;
   margin-bottom: 0.5rem;
   color: var(--gold);
+  font-family: var(--font-label);
   font-size: 0.66rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 400;
   letter-spacing: 0.14em;
 }
 
@@ -600,10 +583,10 @@ a:focus-visible, button:focus-visible {
 }
 
 .event-spec-label {
+  font-family: var(--font-label);
   font-size: 0.6rem;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.14em;
-  text-transform: uppercase;
   color: var(--gold);
 }
 
