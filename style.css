@@ -371,7 +371,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .countdown {
-  margin: 0 0 1.75rem;
+  margin: 0.4rem 0 1.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
