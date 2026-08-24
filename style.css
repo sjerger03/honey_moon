@@ -104,16 +104,18 @@ a:focus-visible, button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .site-nav.is-scrolled .nav-menu-toggle {
   background: var(--sand);
   border-color: var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
 }
 
 .site-nav.is-scrolled .nav-menu-toggle:hover {
   transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--ink);
 }
 
 .nav-flower-icon {
@@ -222,16 +224,18 @@ a:focus-visible, button:focus-visible {
   background: #fff;
   border: 2px solid var(--ink);
   border-radius: 50%;
+  box-shadow: 3px 3px 0 var(--ink);
   color: var(--ink);
   font-size: 1.5rem;
   line-height: 1;
   cursor: pointer;
   padding: 0;
-  transition: transform 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .site-menu-close:hover {
   transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--ink);
 }
 
 .site-menu-list {
