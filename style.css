@@ -85,48 +85,50 @@ a:focus-visible, button:focus-visible {
 }
 
 .nav-inner {
-  position: relative;
   width: 100%;
-  min-height: 3.5rem;
-  padding: 0.65rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.15rem 1.25rem;
 }
 
 .nav-menu-toggle {
-  position: absolute;
-  top: 50%;
-  left: 1.25rem;
-  transform: translateY(-50%);
   pointer-events: auto;
-  background: var(--sand);
-  border: 2px solid var(--ink);
+  background: none;
+  border: 2px solid transparent;
   border-radius: 50%;
   padding: 0.5rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 3px 3px 0 var(--ink);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease;
 }
 
-.nav-menu-toggle:hover {
-  transform: translateY(-50%) translate(2px, 2px);
+.site-nav.is-scrolled .nav-menu-toggle {
+  background: var(--sand);
+  border-color: var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
+.site-nav.is-scrolled .nav-menu-toggle:hover {
+  transform: translate(2px, 2px);
   box-shadow: 1px 1px 0 var(--ink);
 }
 
 .nav-flower-icon {
   display: block;
+  color: #fff;
+  transition: color 0.35s ease;
+}
+
+.site-nav.is-scrolled .nav-flower-icon {
   color: var(--ink);
 }
 
 .nav-wordmark {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   pointer-events: auto;
   text-decoration: none;
-  text-align: center;
 }
 
 .nav-wordmark-full {
@@ -142,24 +144,12 @@ a:focus-visible, button:focus-visible {
   font-size: 2rem;
   letter-spacing: 0;
   color: #fff;
-  transition: color 0.35s ease;
+  transition: opacity 0.35s ease;
 }
 
 .site-nav.is-scrolled .nav-wordmark-compact {
-  color: var(--ink);
-}
-
-/* Mobile: nav stays transparent always; scrolled state gets a solid
-   circle behind the icon, and the wordmark disappears rather than
-   sticking around in a full bar. */
-@media (max-width: 640px) {
-  .site-nav.is-scrolled .nav-wordmark { opacity: 0; pointer-events: none; }
-}
-
-/* Desktop/tablet: solid bar appears behind the nav on scroll. */
-@media (min-width: 641px) {
-  .site-nav { transition: background 0.35s ease, box-shadow 0.35s ease; }
-  .site-nav.is-scrolled { background: var(--sand); box-shadow: 0 1px 0 var(--line); }
+  opacity: 0;
+  pointer-events: none;
 }
 
 .day-nav {
@@ -195,7 +185,7 @@ a:focus-visible, button:focus-visible {
 }
 
 @media (max-width: 560px) {
-  .nav-inner { padding: 0.85rem 1rem; }
+  .nav-inner { padding: 1.15rem 1rem; }
 }
 
 /* ---------- Site menu ---------- */
