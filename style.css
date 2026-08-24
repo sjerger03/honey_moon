@@ -89,25 +89,30 @@ a:focus-visible, button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem;
+  padding: 1.5rem;
 }
 
 .nav-menu-toggle {
   order: 2;
   margin-right: -0.5rem;
   pointer-events: auto;
-  background: var(--sand);
-  border: 2px solid var(--ink);
+  background: none;
+  border: 2px solid transparent;
   border-radius: 50%;
   padding: 0.5rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.15s ease;
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
 }
 
-.nav-menu-toggle:hover {
+.site-nav.is-scrolled .nav-menu-toggle {
+  background: var(--sand);
+  border-color: var(--ink);
+}
+
+.site-nav.is-scrolled .nav-menu-toggle:hover {
   transform: translate(2px, 2px);
 }
 
@@ -115,13 +120,14 @@ a:focus-visible, button:focus-visible {
   display: block;
   width: 38px;
   height: 38px;
-  color: var(--ink);
-  transition: width 0.25s ease, height 0.25s ease;
+  color: #fff;
+  transition: color 0.35s ease, width 0.25s ease, height 0.25s ease;
 }
 
 .site-nav.is-scrolled .nav-flower-icon {
   width: 28px;
   height: 28px;
+  color: var(--ink);
 }
 
 .nav-wordmark {
@@ -182,10 +188,6 @@ a:focus-visible, button:focus-visible {
   background: var(--sand);
   transform: translate(2px, 2px);
   box-shadow: 1px 1px 0 var(--ink);
-}
-
-@media (max-width: 560px) {
-  .nav-inner { padding: 1.15rem 1rem; }
 }
 
 /* ---------- Site menu ---------- */
@@ -346,7 +348,7 @@ a:focus-visible, button:focus-visible {
 .hero-subtitle {
   max-width: 100%;
   min-width: 0;
-  margin: 0 0 1.5rem;
+  margin: 0 0 0.6rem;
   font-family: var(--font-script);
   font-weight: 400;
   font-size: clamp(2.9rem, 6.5vw, 4.6rem);
@@ -358,7 +360,7 @@ a:focus-visible, button:focus-visible {
 .hero-title {
   max-width: 100%;
   min-width: 0;
-  margin: 0 0 1.1rem;
+  margin: 0 0 0.5rem;
   font-family: var(--font-display);
   font-weight: 800;
   font-size: clamp(2.3rem, 6.5vw, 4.6rem);
