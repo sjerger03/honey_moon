@@ -1,6 +1,6 @@
 :root {
   --gold: #294a3f;
-  --gold-bright: #294a3f;
+  --gold-bright: #a4e87b;
   --sand: #f6c4c3;
   --sand-deep: #eeb0af;
   --ink: #1a1815;
@@ -553,7 +553,7 @@ a:focus-visible, button:focus-visible {
   margin-top: 0.75rem;
   padding: 0.55rem 1.1rem;
   background: var(--gold-bright);
-  color: var(--sand);
+  color: var(--ink);
   font-family: var(--font-body);
   font-size: 0.68rem;
   font-weight: 700;
