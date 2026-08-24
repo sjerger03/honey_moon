@@ -89,7 +89,7 @@ a:focus-visible, button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.15rem 1.25rem;
+  padding: 1.15rem 0.75rem 1.15rem 1.25rem;
 }
 
 .nav-menu-toggle {
@@ -191,7 +191,7 @@ a:focus-visible, button:focus-visible {
 }
 
 @media (max-width: 560px) {
-  .nav-inner { padding: 1.15rem 1rem; }
+  .nav-inner { padding: 1.15rem 0.5rem 1.15rem 1rem; }
 }
 
 /* ---------- Site menu ---------- */
