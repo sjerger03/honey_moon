@@ -6,10 +6,10 @@
   --ink: #1a1815;
   --muted: #6b6459;
   --line: rgba(20, 18, 15, 0.14);
-  --font-display: "Lora", "Iowan Old Style", Palatino, Georgia, serif;
+  --font-display: "Fredoka", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   --font-script: "Kaushan Script", "Brush Script MT", cursive;
-  --font-label: "Kaushan Script", "Brush Script MT", cursive;
-  --font-body: "Lora", "Iowan Old Style", Palatino, Georgia, serif;
+  --font-label: "Karla", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-body: "Karla", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 @font-face {
@@ -21,11 +21,19 @@
 }
 
 @font-face {
-  font-family: "Lora";
+  font-family: "Fredoka";
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
-  src: url("fonts/lora-variable.woff2") format("woff2");
+  src: url("fonts/fredoka-variable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Karla";
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/karla-variable.woff2") format("woff2");
 }
 
 * { box-sizing: border-box; }
@@ -387,12 +395,19 @@ a:focus-visible, button:focus-visible {
   gap: 0.6rem;
 }
 
+.countdown::before,
+.countdown::after {
+  content: "";
+  width: 3.5rem;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.6);
+}
 
 .countdown-value {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(1.5rem, 3.2vw, 2rem);
-  letter-spacing: 0.06em;
+  font-size: clamp(1.3rem, 2.8vw, 1.75rem);
+  letter-spacing: 0.01em;
   font-variant-numeric: tabular-nums;
 }
 
@@ -425,9 +440,10 @@ a:focus-visible, button:focus-visible {
 
 .group-title {
   font-family: var(--font-label);
-  font-weight: 400;
-  font-size: 1.3rem;
-  letter-spacing: 0.01em;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   color: var(--gold);
   text-align: center;
   margin: 3rem 0 1.5rem;
@@ -454,9 +470,10 @@ a:focus-visible, button:focus-visible {
 
 .day-label .day-tag {
   font-family: var(--font-label);
-  font-size: 1.15rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   color: var(--gold);
 }
 
@@ -579,9 +596,10 @@ a:focus-visible, button:focus-visible {
   margin-bottom: 0.5rem;
   color: var(--gold);
   font-family: var(--font-label);
-  font-size: 1.15rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .event-specs {
@@ -601,9 +619,10 @@ a:focus-visible, button:focus-visible {
 
 .event-spec-label {
   font-family: var(--font-label);
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   color: var(--gold);
 }
 
